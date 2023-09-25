@@ -12,6 +12,8 @@ Key Features:
 
 🌈 Custom Themes: Choose from a variety of themes to personalize your calculator's appearance.
 
+🌐 Responsive Design: Enjoy a seamless experience on any device, thanks to our responsive web design.
+
 Technologies Used:
 
 HTML5
