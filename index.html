@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="calci.js"></script>
+        <title>
+            calculator website
+        </title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:#252B48;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+            justify-content: center;
+            color:aliceblue;
+        }
+        .container{
+            width:100%;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .calculator{
+            background-color:goldenrod;
+            border-radius: 10px;
+            padding: 20px;
+
+        }
+        .calculator form input{
+            border: 0;
+            outline: 0;
+            width:60px;
+            height:60px;
+            border-radius: 10px;
+            background-color:#252B48;
+            font-size: large;
+            font-weight: 500;
+            color: white;
+        }
+        .calculator form input[type="button"]:hover{
+            background-color:red;
+        }
+        
+        #output_screen{
+            border: none;
+            border-radius: 10px;
+            width:30%;
+            height: 50px;
+            font-size: 50px;
+            background-color: transparent;
+        }
+       #numbers_equal{
+        width:130px;
+       }
+    </style>
+    <body>
+     
+            <div class="container">
+              <div class="calculator">
+                <form>
+                <h1>CALCULATOR</h1>
+                <input type="text" id="output_screen" name="display"><br><br>
+                <input type="button" id="operation_AC" value="AC" onclick="display.value+='' ">
+                <input type="button" id="operation_DE" value="DE">
+                <input type="button" id="operation_decimal" value="." onclick="display.value+='.' ">
+                <input type="button" id="operation_flor" value="/" onclick="display.value+='/' ">
+                <br>
+                <br>
+                <input type="button" id="numbers" value="1" onclick="display.value+='1' ">
+                <input type="button" id="numbers" value="2" onclick="display.value+='2' ">
+                <input type="button" id="numbers" value="3" onclick="display.value+='3' ">
+                <input type="button" id="operation_add" value="+" onclick="display.value+='+' ">
+                <br><br>
+                <input type="button" id="numbers" value="4" onclick="display.value+='4' ">
+                <input type="button" id="numbers" value="5" onclick="display.value+='5' ">
+                <input type="button" id="numbers" value="6" onclick="display.value+='6' ">
+                <input type="button" id="operation_sub" value="-" onclick="display.value+='-' ">
+                <br><br>
+                <input type="button" id="numbers" value="7" onclick="display.value+='7' ">
+                <input type="button" id="numbers" value="8" onclick="display.value+='8' ">
+                <input type="button" id="numbers" value="9" onclick="display.value+='9' ">
+                <input type="button" id="operation_mul" value="*" onclick="display.value+='*' ">
+                <br><br>
+                <input type="button" id="numbers" value="00" onclick="display.value+='00' ">
+                <input type="button" id="numbers" value="0"  onclick="display.value+='0' ">
+                <input type="button" id="numbers_equal" value="=">
+               </form>
+                <br><br>
+            </div>
+          </div>
+       
+    </body>
+ </html>
